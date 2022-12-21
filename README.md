@@ -37,6 +37,15 @@ if(!function_exists('prefix_custom_product_data_tab_init')) :
              'desc_tip'    => true,
        ),
 	          // Text
+	array(
+             'id'          => '_distributor',
+             'type'        => 'text',
+             'label'       => __('Agregar el nombre distribuidor', 'wc_cpdf'),
+             'placeholder' => __('Agregar el nombre distribuidor.', 'wc_cpdf'),
+             'class'       => 'large',
+             'description' => __('Agregar el nombre distribuidor.', 'wc_cpdf'),
+             'desc_tip'    => true,
+       ),
        array(
              'id'          => '_codimarca1',
              'type'        => 'text',
