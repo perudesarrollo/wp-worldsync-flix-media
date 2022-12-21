@@ -185,11 +185,11 @@ if ( ! empty( $product_tabs ) ) : ?>
 			<div id="flix-minisite"></div>
 			<div id="flix-inpage"></div>
 			<script type="text/javascript" src="//media.flixfacts.com/js/loader.js" 
-				data-flix-distributor=""
+				data-flix-distributor="<?= $wc_cpdf->get_value(get_the_ID(), '_distributor')?>"
 				data-flix-language="pe"
 				data-flix-brand="<?= $wc_cpdf->get_value(get_the_ID(), '_codimarca1')?>"
 				data-flix-mpn="<?= $wc_cpdf->get_value(get_the_ID(), '_codimarca2')?>"
-				data-flix-ean="<?= $wc_cpdf->get_value(get_the_ID(), '_codimarca2')?>"
+				data-flix-ean="<?= $wc_cpdf->get_value(get_the_ID(), '_upcean')?>"
 				data-flix-button="flix-minisite"
 				data-flix-inpage="flix-inpage" 
 				data-flix-button-image=""
